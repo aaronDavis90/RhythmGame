@@ -36,10 +36,10 @@ public class SongManager : MonoBehaviour
         Instance = this;
         if (Application.streamingAssetsPath.StartsWith("http://") || Application.streamingAssetsPath.StartsWith("https://"))
         {
-            ReadFromWebsite();
+            StartCoroutine(ReadFromWebsite());
         }
 
-    else
+        else
         {
             ReadFromFile();
         }
@@ -61,12 +61,13 @@ public class SongManager : MonoBehaviour
                 using (var stream = new MemoryStream(results))
                 {
                     midiFile = MidiFile.Read(stream);
+                    GetDataFromMidi();
                 }
             }
         }
     }
 
-    void ReadFromFile()
+    private void ReadFromFile()
     {
         midiFile = MidiFile.Read(Application.streamingAssetsPath + "/" + fileLocation);
         GetDataFromMidi();

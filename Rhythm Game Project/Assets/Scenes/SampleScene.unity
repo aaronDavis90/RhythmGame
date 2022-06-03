@@ -152,8 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6003c341b7bf1c4686c7edec3844dd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSFX: {fileID: 0}
-  missSFX: {fileID: 0}
+  hitSFX: {fileID: 927420046}
+  missSFX: {fileID: 1565095849}
   scoreText: {fileID: 653571913}
 --- !u!4 &86311823
 Transform:
@@ -468,7 +468,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.91, y: 3.11}
+  m_AnchoredPosition: {x: -5.86, y: 3.16}
   m_SizeDelta: {x: 5.6398, y: 3.3106}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &686138121
@@ -559,7 +559,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 33ae27ac3f858d24eb44cb3b36412214, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -815,7 +815,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509414195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3, z: 0}
+  m_LocalPosition: {x: 0, y: -3, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -862,7 +862,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 81bcbd78ffcab3041bcc761bba5d69d8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -986,7 +986,7 @@ MonoBehaviour:
   songDelayInSeconds: 0
   marginOfError: 0.1
   inputDelayInMilliseconds: 0
-  fileLocation: Get Up (Rhythm Game Song 1).mid
+  fileLocation: GetUp.mid
   noteTime: 1
   noteSpawnY: 7
   noteTapY: -3
